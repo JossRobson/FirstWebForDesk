@@ -1,0 +1,284 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+    font-family: 'roboto', sans-serif;
+
+}
+h1{ font-size: 3.5em;}
+h1{text-shadow: 4px -4px #282a2c;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2.1em;}
+h4{ font-size: 1.7;}
+p{ font-size: 1.25em;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 35px;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: rgb(240, 234, 234);
+    background-color: rgb(241, 69, 135);
+
+}
+button:hover{
+    background-color: rgb(109, 9, 104);
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+.color-acento{color: rgb(83, 43, 226);}
+header{
+    background-color: rgb(212, 213, 248);
+    
+}
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(83, 43, 226);
+    font-size: 1.45em;
+    
+}
+header .container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+    
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+    
+}
+
+    
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+}
+header a:hover{
+    color: rgb(83, 43, 226);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    
+    color: hwb(0 88% 8%);
+    background-image: url(imagenes/prueba.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    }
+    
+   
+#hero h1{
+    color: white;
+    
+}
+#somos-proya .container{
+text-align: center;
+padding: 200px 12px;
+}
+
+
+#nuestrosprogramas{
+    background-color: rgb(31, 29, 29);
+    color:white
+}
+#nuestrosprogramas .container{
+text-align: center;
+padding: 70px 0px;
+
+}
+#nuestrosprogramas h2{
+    margin-top: 0;
+    font-size: 2.7em;
+}
+#nuestrosprogramas button{
+    font-size: 1.2em;
+}
+
+#nuestrosprogramas p{
+    display: none;
+}
+#nuestrosprogramas .carta{
+background-position: center center;
+background-size: cover;
+padding: 30px;
+margin: 15px;
+border-radius: 15px;
+
+
+}
+.carta:first-child{
+background-image:linear-gradient(
+    0deg, 
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+
+,url(imagenes/4.webp);
+
+}
+.carta:nth-child(2){
+background-image:linear-gradient(
+0deg, 
+rgba(0,0,0,0.5), 
+rgba(0,0,0,0.5) 
+)
+
+,url(imagenes/best1.jpg);
+
+}
+.carta:nth-child(3){
+background-image:linear-gradient(
+0deg,
+rgba(0,0,0,0.5),
+rgba(0,0,0,0.5)
+)
+,url(imagenes/3.webp);
+
+}
+#caracteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+    color: rgb(36, 36, 37);
+    
+
+}
+ul {
+list-style-type: none;
+}
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+    font-size: 25px;
+
+}
+footer{
+    background-color: rgb(241, 237, 237);
+}
+footer p{
+    margin: o;
+    padding: 15px;
+    color: rgb(68, 64, 64);
+    
+}
+footer .container{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+
+header .container{
+    flex-direction: row;
+    justify-content: space-between;
+}
+header nav{
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+
+}
+#somos-proya .container{
+display: flex;
+justify-content: center;
+
+}
+#somos-proya .texto{
+    width: 55%;
+    max-width: 600px;
+    text-align: initial;
+    padding: 0px 30px;
+    display: flexa;
+    flex-direction: column;
+   justify-content: center;
+
+
+}
+#somos-proya h2{
+    margin-top: 0px;
+}
+
+#somos-proya .img-container{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) ,url(imagenes/Programador-33-696x464.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 50%;
+    }
+}
+
+#nuestrosprogramas .programas{
+    display:flex;
+    
+}
+#nuestrosprogramas h3{
+    margin-top: 0;
+
+}
+#nuestrosprogramas .carta{
+    padding: 45px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+
+
+}
+#caracteristicas{
+     background-image: url(imagenes/cuanto-gana-programador-sin-titulo-1.webp);
+     background-repeat: no-repeat;
+     background-size: 600px 400px;
+     background-position: calc(100vw - 700px) 150px;
+     
+    
+}
+#caracteristicas .container{
+    text-align: initial;
+}
+#caracteristicas ul{
+    margin-left: 200px;
+
+}
